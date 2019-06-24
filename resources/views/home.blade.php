@@ -9,22 +9,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Aguafina+Script&display=swap" rel="stylesheet">
-    <!-- font-family: 'Aguafina Script', cursive; -->
-    <style>
-        .headline1{
-            margin: 70px 25%;
-            text-align: center;
-            height: 500px;
-            width: 50%;
-            border: 1px solid black;
-        }
-        h1{
-            margin: 30px 0;
-            font-family: 'Aguafina Script', cursive;
-            font-size: 90px;
-            color: purple;
-        }
-    </style>
+    <!-- local styles -->
+    <link rel="stylesheet" href="{{asset('css/home.css')}}">
     <title>Instaguy network</title>
 </head>
 <body>
@@ -33,7 +19,7 @@
         <div class="row">
             <div class="headline1">
                 <h1>
-                    instaguy
+                    instaguy {{''.$id}}
                 </h1>
                 <form action="">
                     <div class="form-group">
