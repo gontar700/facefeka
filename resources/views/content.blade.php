@@ -11,5 +11,5 @@
 @stop
 
 @section('footer')
-
+<script>console.log('a')</script>
 @stop
