@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ef555536-0212-4992-affc-3886be0bf658" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/content.blade.php" afterPath="$PROJECT_DIR$/resources/views/content.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2019_06_29_123703_add_is_admin_column_to_posts_table.php" afterPath="$PROJECT_DIR$/database/migrations/2019_06_29_123703_add_is_admin_column_to_posts_table.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,11 +44,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2019_06_29_120822_create_posts_table.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2019_06_29_120822_create_posts_table.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_29_120822_create_posts_table.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
               <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2019_06_29_123703_add_is_admin_column_to_posts_table.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_29_123703_add_is_admin_column_to_posts_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -87,6 +96,7 @@
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/config/database.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_29_120822_create_posts_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_06_29_123703_add_is_admin_column_to_posts_table.php" />
       </list>
     </option>
   </component>
@@ -219,7 +229,7 @@
       <workItem from="1561798360269" duration="2449000" />
       <workItem from="1561804668211" duration="970000" />
       <workItem from="1561805770301" duration="314000" />
-      <workItem from="1561806165361" duration="2795000" />
+      <workItem from="1561806165361" duration="3182000" />
     </task>
     <task id="LOCAL-00001" summary="view template">
       <created>1561374920007</created>
@@ -232,7 +242,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20840000" />
+    <option name="totallyTimeSpent" value="21227000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -498,6 +508,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_29_123703_add_is_admin_column_to_posts_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
           <folding />
         </state>
       </provider>
