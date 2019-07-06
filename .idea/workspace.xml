@@ -20,23 +20,26 @@
       <file leaf-file-name="web.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="131" column="35" lean-forward="false" selection-start-line="131" selection-start-column="35" selection-end-line="131" selection-end-column="35" />
+            <state relative-caret-position="244">
+              <caret line="109" column="0" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
               <folding>
                 <element signature="e#7#389#0#PHP" expanded="true" />
                 <element signature="e#591#712#0#PHP" expanded="false" />
-                <element signature="e#884#1098#0#PHP" expanded="false" />
-                <element signature="e#1101#1243#0#PHP" expanded="false" />
-                <element signature="e#1246#1385#0#PHP" expanded="false" />
-                <element signature="e#1388#1486#0#PHP" expanded="false" />
-                <element signature="e#1498#1712#0#PHP" expanded="false" />
-                <element signature="e#1715#1956#0#PHP" expanded="false" />
-                <element signature="e#2022#2188#1#PHP" expanded="false" />
-                <element signature="e#2214#2306#1#PHP" expanded="false" />
-                <element signature="e#2331#2393#1#PHP" expanded="false" />
-                <element signature="e#2419#2458#1#PHP" expanded="false" />
-                <marker date="1562362124000" expanded="true" signature="648:694" ph="insert into posts... " />
-                <marker date="1562362124000" expanded="true" signature="950:982" ph="select * fro... posts" />
+                <element signature="e#885#1099#0#PHP" expanded="false" />
+                <element signature="e#1102#1244#0#PHP" expanded="false" />
+                <element signature="e#1247#1386#0#PHP" expanded="false" />
+                <element signature="e#1389#1487#0#PHP" expanded="false" />
+                <element signature="e#1499#1713#0#PHP" expanded="false" />
+                <element signature="e#1716#1957#0#PHP" expanded="false" />
+                <element signature="e#2023#2189#1#PHP" expanded="false" />
+                <element signature="e#2215#2307#1#PHP" expanded="false" />
+                <element signature="e#2532#2571#1#PHP" expanded="false" />
+                <element signature="e#2601#2643#1#PHP" expanded="false" />
+                <element signature="e#2676#2763#1#PHP" expanded="false" />
+                <element signature="e#2797#2870#1#PHP" expanded="false" />
+                <element signature="e#2896#2946#1#PHP" expanded="false" />
+                <marker date="1562425219000" expanded="true" signature="648:694" ph="insert into posts... " />
+                <marker date="1562425219000" expanded="true" signature="951:983" ph="select * fro... posts" />
               </folding>
             </state>
           </provider>
@@ -149,6 +152,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -160,8 +165,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -169,7 +172,7 @@
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="SearchEverywhereHistoryKey" value="web&#9;FILE&#9;file:///Users/danielgontar/Projects/facefeka/routes/web.php&#10;post.php&#9;FILE&#9;file:///Users/danielgontar/Projects/facefeka/app/Post.php&#10;post&#9;FILE&#9;file:///Users/danielgontar/Projects/facefeka/app/Post.php&#10;Post&#9;null&#9;null&#10;model&#9;null&#9;null&#10;web.php&#9;FILE&#9;file:///Users/danielgontar/Projects/facefeka/routes/web.php&#10;database.ph&#9;FILE&#9;file:///Users/danielgontar/Projects/facefeka/config/database.php" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/danielgontar/Projects/facefeka/routes/web.php&#10;web&#9;null&#9;null&#10;post.php&#9;FILE&#9;file:///Users/danielgontar/Projects/facefeka/app/Post.php&#10;post&#9;FILE&#9;file:///Users/danielgontar/Projects/facefeka/app/Post.php&#10;Post&#9;null&#9;null&#10;model&#9;null&#9;null&#10;web.php&#9;FILE&#9;file:///Users/danielgontar/Projects/facefeka/routes/web.php&#10;database.ph&#9;FILE&#9;file:///Users/danielgontar/Projects/facefeka/config/database.php" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -206,7 +209,8 @@
       <workItem from="1562102085268" duration="3030000" />
       <workItem from="1562327679909" duration="1786000" />
       <workItem from="1562332143578" duration="662000" />
-      <workItem from="1562356023664" duration="1227000" />
+      <workItem from="1562356023664" duration="1436000" />
+      <workItem from="1562424754012" duration="488000" />
     </task>
     <task id="LOCAL-00001" summary="view template">
       <created>1561374920007</created>
@@ -219,23 +223,23 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35265000" />
+    <option name="totallyTimeSpent" value="35962000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4184168" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4184168" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35350758" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -288,18 +292,21 @@
           <folding>
             <element signature="e#7#389#0#PHP" expanded="true" />
             <element signature="e#591#712#0#PHP" expanded="false" />
-            <element signature="e#884#1098#0#PHP" expanded="false" />
-            <element signature="e#1101#1243#0#PHP" expanded="false" />
-            <element signature="e#1246#1385#0#PHP" expanded="false" />
-            <element signature="e#1388#1486#0#PHP" expanded="false" />
-            <element signature="e#1498#1712#0#PHP" expanded="false" />
-            <element signature="e#1715#1956#0#PHP" expanded="false" />
-            <element signature="e#2022#2188#1#PHP" expanded="false" />
-            <element signature="e#2214#2306#1#PHP" expanded="false" />
-            <element signature="e#2331#2393#1#PHP" expanded="false" />
-            <element signature="e#2419#2458#1#PHP" expanded="false" />
-            <marker date="1562362124000" expanded="true" signature="648:694" ph="insert into posts... " />
-            <marker date="1562362124000" expanded="true" signature="950:982" ph="select * fro... posts" />
+            <element signature="e#885#1099#0#PHP" expanded="false" />
+            <element signature="e#1102#1244#0#PHP" expanded="false" />
+            <element signature="e#1247#1386#0#PHP" expanded="false" />
+            <element signature="e#1389#1487#0#PHP" expanded="false" />
+            <element signature="e#1499#1713#0#PHP" expanded="false" />
+            <element signature="e#1716#1957#0#PHP" expanded="false" />
+            <element signature="e#2023#2189#1#PHP" expanded="false" />
+            <element signature="e#2215#2307#1#PHP" expanded="false" />
+            <element signature="e#2532#2571#1#PHP" expanded="false" />
+            <element signature="e#2601#2643#1#PHP" expanded="false" />
+            <element signature="e#2676#2763#1#PHP" expanded="false" />
+            <element signature="e#2797#2870#1#PHP" expanded="false" />
+            <element signature="e#2896#2946#1#PHP" expanded="false" />
+            <marker date="1562425219000" expanded="true" signature="648:694" ph="insert into posts... " />
+            <marker date="1562425219000" expanded="true" signature="951:983" ph="select * fro... posts" />
           </folding>
         </state>
       </provider>
@@ -337,18 +344,21 @@
           <folding>
             <element signature="e#7#389#0#PHP" expanded="true" />
             <element signature="e#591#712#0#PHP" expanded="false" />
-            <element signature="e#884#1098#0#PHP" expanded="false" />
-            <element signature="e#1101#1243#0#PHP" expanded="false" />
-            <element signature="e#1246#1385#0#PHP" expanded="false" />
-            <element signature="e#1388#1486#0#PHP" expanded="false" />
-            <element signature="e#1498#1712#0#PHP" expanded="false" />
-            <element signature="e#1715#1956#0#PHP" expanded="false" />
-            <element signature="e#2022#2188#1#PHP" expanded="false" />
-            <element signature="e#2214#2306#1#PHP" expanded="false" />
-            <element signature="e#2331#2393#1#PHP" expanded="false" />
-            <element signature="e#2419#2458#1#PHP" expanded="false" />
-            <marker date="1562362124000" expanded="true" signature="648:694" ph="insert into posts... " />
-            <marker date="1562362124000" expanded="true" signature="950:982" ph="select * fro... posts" />
+            <element signature="e#885#1099#0#PHP" expanded="false" />
+            <element signature="e#1102#1244#0#PHP" expanded="false" />
+            <element signature="e#1247#1386#0#PHP" expanded="false" />
+            <element signature="e#1389#1487#0#PHP" expanded="false" />
+            <element signature="e#1499#1713#0#PHP" expanded="false" />
+            <element signature="e#1716#1957#0#PHP" expanded="false" />
+            <element signature="e#2023#2189#1#PHP" expanded="false" />
+            <element signature="e#2215#2307#1#PHP" expanded="false" />
+            <element signature="e#2532#2571#1#PHP" expanded="false" />
+            <element signature="e#2601#2643#1#PHP" expanded="false" />
+            <element signature="e#2676#2763#1#PHP" expanded="false" />
+            <element signature="e#2797#2870#1#PHP" expanded="false" />
+            <element signature="e#2896#2946#1#PHP" expanded="false" />
+            <marker date="1562425219000" expanded="true" signature="648:694" ph="insert into posts... " />
+            <marker date="1562425219000" expanded="true" signature="951:983" ph="select * fro... posts" />
           </folding>
         </state>
       </provider>
@@ -370,18 +380,21 @@
           <folding>
             <element signature="e#7#389#0#PHP" expanded="true" />
             <element signature="e#591#712#0#PHP" expanded="false" />
-            <element signature="e#884#1098#0#PHP" expanded="false" />
-            <element signature="e#1101#1243#0#PHP" expanded="false" />
-            <element signature="e#1246#1385#0#PHP" expanded="false" />
-            <element signature="e#1388#1486#0#PHP" expanded="false" />
-            <element signature="e#1498#1712#0#PHP" expanded="false" />
-            <element signature="e#1715#1956#0#PHP" expanded="false" />
-            <element signature="e#2022#2188#1#PHP" expanded="false" />
-            <element signature="e#2214#2306#1#PHP" expanded="false" />
-            <element signature="e#2331#2393#1#PHP" expanded="false" />
-            <element signature="e#2419#2458#1#PHP" expanded="false" />
-            <marker date="1562362124000" expanded="true" signature="648:694" ph="insert into posts... " />
-            <marker date="1562362124000" expanded="true" signature="950:982" ph="select * fro... posts" />
+            <element signature="e#885#1099#0#PHP" expanded="false" />
+            <element signature="e#1102#1244#0#PHP" expanded="false" />
+            <element signature="e#1247#1386#0#PHP" expanded="false" />
+            <element signature="e#1389#1487#0#PHP" expanded="false" />
+            <element signature="e#1499#1713#0#PHP" expanded="false" />
+            <element signature="e#1716#1957#0#PHP" expanded="false" />
+            <element signature="e#2023#2189#1#PHP" expanded="false" />
+            <element signature="e#2215#2307#1#PHP" expanded="false" />
+            <element signature="e#2532#2571#1#PHP" expanded="false" />
+            <element signature="e#2601#2643#1#PHP" expanded="false" />
+            <element signature="e#2676#2763#1#PHP" expanded="false" />
+            <element signature="e#2797#2870#1#PHP" expanded="false" />
+            <element signature="e#2896#2946#1#PHP" expanded="false" />
+            <marker date="1562425219000" expanded="true" signature="648:694" ph="insert into posts... " />
+            <marker date="1562425219000" expanded="true" signature="951:983" ph="select * fro... posts" />
           </folding>
         </state>
       </provider>
@@ -673,25 +686,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Processor/WebProcessor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="131" column="35" lean-forward="false" selection-start-line="131" selection-start-column="35" selection-end-line="131" selection-end-column="35" />
+        <state relative-caret-position="244">
+          <caret line="109" column="0" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
           <folding>
             <element signature="e#7#389#0#PHP" expanded="true" />
             <element signature="e#591#712#0#PHP" expanded="false" />
-            <element signature="e#884#1098#0#PHP" expanded="false" />
-            <element signature="e#1101#1243#0#PHP" expanded="false" />
-            <element signature="e#1246#1385#0#PHP" expanded="false" />
-            <element signature="e#1388#1486#0#PHP" expanded="false" />
-            <element signature="e#1498#1712#0#PHP" expanded="false" />
-            <element signature="e#1715#1956#0#PHP" expanded="false" />
-            <element signature="e#2022#2188#1#PHP" expanded="false" />
-            <element signature="e#2214#2306#1#PHP" expanded="false" />
-            <element signature="e#2331#2393#1#PHP" expanded="false" />
-            <element signature="e#2419#2458#1#PHP" expanded="false" />
-            <marker date="1562362124000" expanded="true" signature="648:694" ph="insert into posts... " />
-            <marker date="1562362124000" expanded="true" signature="950:982" ph="select * fro... posts" />
+            <element signature="e#885#1099#0#PHP" expanded="false" />
+            <element signature="e#1102#1244#0#PHP" expanded="false" />
+            <element signature="e#1247#1386#0#PHP" expanded="false" />
+            <element signature="e#1389#1487#0#PHP" expanded="false" />
+            <element signature="e#1499#1713#0#PHP" expanded="false" />
+            <element signature="e#1716#1957#0#PHP" expanded="false" />
+            <element signature="e#2023#2189#1#PHP" expanded="false" />
+            <element signature="e#2215#2307#1#PHP" expanded="false" />
+            <element signature="e#2532#2571#1#PHP" expanded="false" />
+            <element signature="e#2601#2643#1#PHP" expanded="false" />
+            <element signature="e#2676#2763#1#PHP" expanded="false" />
+            <element signature="e#2797#2870#1#PHP" expanded="false" />
+            <element signature="e#2896#2946#1#PHP" expanded="false" />
+            <marker date="1562425219000" expanded="true" signature="648:694" ph="insert into posts... " />
+            <marker date="1562425219000" expanded="true" signature="951:983" ph="select * fro... posts" />
           </folding>
         </state>
       </provider>

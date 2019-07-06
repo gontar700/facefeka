@@ -25,6 +25,7 @@ Route::get(
     '/insert', function () {
     DB::insert('insert into posts(title, content) values (?,?)', ['a', 'b']);
 });
+
 /*
 |--------------------------------------------------------------------------
 | Eloquent
@@ -100,9 +101,14 @@ Route::get('/update', function(){
 });
 
 Route::get('/delete',function(){
-    $post = Post::find(2);
+    $post = Post::find(1);
 
     $post->delete();
+});
+// forcedelete deleted items
+Route::get('/forcedelete',function(){
+
+    Post::onlyTrashed()->forceDelete();
 });
 
 Route::get('/delete2',function(){
