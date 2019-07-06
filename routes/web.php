@@ -113,3 +113,21 @@ Route::get('/delete2',function(){
 Route::get('/softdelete',function(){
     Post::find(1)->delete();
 });
+
+Route::get('/readsoftdelete',function(){
+
+    $post = Post::withTrashed()->where('id',1)->get();
+    return $post;
+});
+
+Route::get('/readsoftdelete2',function(){
+
+
+    $post = Post::onlyTrashed()->get();
+    return $post;
+});
+
+Route::get('/restore',function(){
+
+    Post::withTrashed()->restore();
+});
