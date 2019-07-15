@@ -12,6 +12,7 @@
 */
 
 use App\Post;
+use App\User;
 
 //Route::get('/', 'PostController@index');
 
@@ -100,21 +101,26 @@ Route::get('/update', function(){
     Post::where('id',3)->where('is_admin',0)->update(['title'=>'title_test']);
 });
 
-Route::get('/delete',function(){
-    $post = Post::find(1);
-
-    $post->delete();
-});
 // forcedelete deleted items
 Route::get('/forcedelete',function(){
 
     Post::onlyTrashed()->forceDelete();
 });
 
-Route::get('/delete2',function(){
-    Post::destroy([4,5]);
+Route::get('/delete',function(){
+    $post = Post::find(4);
+
+    $post->delete();
 });
 
+// delete with destroy
+Route::get('/delete2',function(){
+    Post::destroy([2]);
+});
+
+Route::get('/delete3',function(){
+    Post::destroy([1]);
+});
 
 Route::get('/softdelete',function(){
     Post::find(1)->delete();
@@ -128,7 +134,6 @@ Route::get('/readsoftdelete',function(){
 
 Route::get('/readsoftdelete2',function(){
 
-
     $post = Post::onlyTrashed()->get();
     return $post;
 });
@@ -136,4 +141,27 @@ Route::get('/readsoftdelete2',function(){
 Route::get('/restore',function(){
 
     Post::withTrashed()->restore();
+});
+
+
+/*
+|--------------------------------------------------------------------------
+| Eloquent Relationships
+|--------------------------------------------------------------------------
+*/
+
+//One To One relationship
+
+Route::get('/user/{id}/post', function($id){
+
+    return User::find($id)->post->title;
+
+});
+
+/* Reverse. user will supply post id system returns user id
+*/
+
+Route::get('post/{id}/user',function($id){
+
+    return Post::find($id)->user->name;
 });
