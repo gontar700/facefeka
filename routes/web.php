@@ -27,6 +27,12 @@ Route::get(
     DB::insert('insert into posts(title, content) values (?,?)', ['a', 'b']);
 });
 
+// autocompletesearch
+
+Route::get('search','AutoCompleteController@index');
+
+Route::get('autocomplete', 'AutoCompleteController@search');
+
 /*
 |--------------------------------------------------------------------------
 | Eloquent
