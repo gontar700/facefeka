@@ -164,10 +164,30 @@ Route::get('/user/{id}/post', function($id){
 
 });
 
-/* Reverse. user will supply post id system returns user id
-*/
+/* Reverse. user will supply post id system returns user id*/
 
 Route::get('post/{id}/user',function($id){
 
     return Post::find($id)->user->name;
 });
+
+Route::get('/posts',function(){
+   $user = User::find(2);
+
+   foreach ($user->posts as $post){
+       echo $post->title.'<br>';
+   }
+});
+
+/* many to many user <-> roles */
+
+Route::get('roles/{id}/user',function($id){
+    $user = User::find($id);
+
+    foreach ($user->roles as $role){
+        echo $role->mame.'<br>';
+    }
+
+});
+
+
