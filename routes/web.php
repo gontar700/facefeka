@@ -13,6 +13,8 @@
 
 use App\Post;
 use App\User;
+use App\Role;
+use App\Country;
 
 //Route::get('/', 'PostController@index');
 
@@ -165,7 +167,6 @@ Route::get('/user/{id}/post', function($id){
 });
 
 /* Reverse. user will supply post id system returns user id*/
-
 Route::get('post/{id}/user',function($id){
 
     return Post::find($id)->user->name;
@@ -180,12 +181,40 @@ Route::get('/posts',function(){
 });
 
 /* many to many user <-> roles */
-
 Route::get('roles/{id}/user',function($id){
     $user = User::find($id);
 
     foreach ($user->roles as $role){
         echo $role->mame.'<br>';
+    }
+});
+
+
+/* many to many get all users by role */
+Route::get('users/{id}/role',function($id){
+    $role = Role::find($id);
+
+    foreach ($role->users as $user){
+        echo $user->name.'<br>';
+    }
+});
+
+/* pivot */
+Route::get('pivot/user',function(){
+
+    $user = User::find(1);
+
+    foreach ($user->roles as $role){
+        return $role->pivot;
+    }
+});
+
+/*country has many posts through user table*/
+Route::get('country/{id}/posts',function($id){
+    $country = Country::find($id);
+
+    foreach ($country->posts as $post){
+        echo $post->content.'<br>';
     }
 
 });

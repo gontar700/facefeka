@@ -6,8 +6,7 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 
-class User extends Authenticatable
-{
+class User extends Authenticatable {
     use Notifiable;
     /**
      * The attributes that are mass assignable.
@@ -36,16 +35,20 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function post(){
+    public function post() {
         return $this->hasOne('App\Post');
     }
 
     // 1 : m user : posts
-    public function posts(){
+    public function posts() {
         return $this->hasMany('App\Post');
     }
+    // pull data from pivot table
+//    public function roles(){
+//        return $this->belongsToMany('App\Role')->withPivot('id','created_at');
+//    }
 
-    public function roles(){
+    public function roles() {
         return $this->belongsToMany('App\Role');
     }
 
