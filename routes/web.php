@@ -15,6 +15,7 @@ use App\Post;
 use App\User;
 use App\Role;
 use App\Country;
+use App\Photo;
 
 //Route::get('/', 'PostController@index');
 
@@ -31,7 +32,7 @@ Route::get(
 
 // autocompletesearch
 
-Route::get('search','AutoCompleteController@index');
+Route::get('search', 'AutoCompleteController@index');
 
 Route::get('autocomplete', 'AutoCompleteController@search');
 
@@ -99,54 +100,64 @@ Route::get(
 
 // model create methods with form
 
-Route::get('/basicinsert3', function () {
+Route::get(
+    '/basicinsert3', function () {
 
     Post::create(['title' => 'title_test', 'content' => 'content_testB']);
     Post::create(['title' => 'title_test', 'content' => 'content_testC']);
 });
 
-Route::get('/update', function(){
-    Post::where('id',3)->where('is_admin',0)->update(['title'=>'title_test']);
+Route::get(
+    '/update', function () {
+    Post::where('id', 3)->where('is_admin', 0)->update(['title' => 'title_test']);
 });
 
 // forcedelete deleted items
-Route::get('/forcedelete',function(){
+Route::get(
+    '/forcedelete', function () {
 
     Post::onlyTrashed()->forceDelete();
 });
 
-Route::get('/delete',function(){
+Route::get(
+    '/delete', function () {
     $post = Post::find(4);
 
     $post->delete();
 });
 
 // delete with destroy
-Route::get('/delete2',function(){
+Route::get(
+    '/delete2', function () {
     Post::destroy([2]);
 });
 
-Route::get('/delete3',function(){
+Route::get(
+    '/delete3', function () {
     Post::destroy([1]);
 });
 
-Route::get('/softdelete',function(){
+Route::get(
+    '/softdelete', function () {
     Post::find(1)->delete();
 });
 
-Route::get('/readsoftdelete',function(){
+Route::get(
+    '/readsoftdelete', function () {
 
-    $post = Post::withTrashed()->where('id',1)->get();
+    $post = Post::withTrashed()->where('id', 1)->get();
     return $post;
 });
 
-Route::get('/readsoftdelete2',function(){
+Route::get(
+    '/readsoftdelete2', function () {
 
     $post = Post::onlyTrashed()->get();
     return $post;
 });
 
-Route::get('/restore',function(){
+Route::get(
+    '/restore', function () {
 
     Post::withTrashed()->restore();
 });
@@ -160,63 +171,100 @@ Route::get('/restore',function(){
 
 //One To One relationship
 
-Route::get('/user/{id}/post', function($id){
+Route::get(
+    '/user/{id}/post', function ($id) {
 
     return User::find($id)->post->title;
 
 });
 
 /* Reverse. user will supply post id system returns user id*/
-Route::get('post/{id}/user',function($id){
+Route::get(
+    'post/{id}/user', function ($id) {
 
     return Post::find($id)->user->name;
 });
 
-Route::get('/posts',function(){
-   $user = User::find(2);
+Route::get(
+    '/posts', function () {
+    $user = User::find(2);
 
-   foreach ($user->posts as $post){
-       echo $post->title.'<br>';
-   }
+    foreach ($user->posts as $post) {
+        echo $post->title . '<br>';
+    }
 });
 
 /* many to many user <-> roles */
-Route::get('roles/{id}/user',function($id){
+Route::get(
+    'roles/{id}/user', function ($id) {
     $user = User::find($id);
 
-    foreach ($user->roles as $role){
-        echo $role->mame.'<br>';
+    foreach ($user->roles as $role) {
+        echo $role->name . '<br>';
     }
 });
 
 
 /* many to many get all users by role */
-Route::get('users/{id}/role',function($id){
+Route::get(
+    'users/{id}/role', function ($id) {
     $role = Role::find($id);
 
-    foreach ($role->users as $user){
-        echo $user->name.'<br>';
+    foreach ($role->users as $user) {
+        echo $user->name . '<br>';
     }
 });
 
 /* pivot */
-Route::get('pivot/user',function(){
+Route::get(
+    'pivot/user', function () {
 
     $user = User::find(1);
 
-    foreach ($user->roles as $role){
+    foreach ($user->roles as $role) {
         return $role->pivot;
     }
 });
 
 /*country has many posts through user table*/
-Route::get('country/{id}/posts',function($id){
+Route::get(
+    'country/{id}/posts', function ($id) {
     $country = Country::find($id);
 
-    foreach ($country->posts as $post){
-        echo $post->content.'<br>';
+    foreach ($country->posts as $post) {
+        echo $post->content . '<br>';
     }
 
 });
 
 
+//Polymorphic Relationships
+// return all photos for specific user
+Route::get('/user/{id}/photos', function ($id) {
+
+    $user = User::find($id);
+
+    foreach ($user->photos as $photo) {
+        echo $photo->path . '<br>';
+    }
+
+});
+
+// polymorphic return all photos for specific user
+Route::get('/post/{id}/photos', function ($id) {
+
+    $post = Post::find($id);
+
+    foreach ($post->photos as $photo) {
+        echo $photo->path . '<br>';
+    }
+
+});
+
+Route::get('photo/{id}/owner', function ($id) {
+
+    $photo = Photo::findOrFail($id);
+
+    // return the photo creator the usr or the post
+    return $photo->imageable;
+});

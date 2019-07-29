@@ -17,7 +17,7 @@ class CreatePhotosTable extends Migration
             $table->bigIncrements('id');
             $table->string('path');
             $table->integer('imageable_id');
-            $table->string('imageable_type');
+            $table->morphs('imageable_type');
             $table->timestamps();
         });
     }
