@@ -261,6 +261,7 @@ Route::get('/post/{id}/photos', function ($id) {
 
 });
 
+// polymorphic revers return user or post by photo
 Route::get('photo/{id}/owner', function ($id) {
 
     $photo = Photo::findOrFail($id);

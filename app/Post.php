@@ -25,4 +25,10 @@ class Post extends Model
     public function photos(){
         return $this->morphMany('App\Photo','imageable');
     }
+
+    // get all tags of a post
+
+    public function tags(){
+        return $this->morphToMany('App\Tag','taggable');
+    }
 }
