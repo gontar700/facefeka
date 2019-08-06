@@ -16,12 +16,12 @@ use App\User;
 use App\Role;
 use App\Country;
 use App\Photo;
+use App\Tag;
 
-//Route::get('/', 'PostController@index');
 
 Route::get('/show', 'PostController@show');
 
-Route::get('/post/{id}', 'PostController@index');
+//Route::get('/post/{id}', 'PostController@index');
 
 Route::resource('posts', 'PostController');
 
@@ -268,4 +268,24 @@ Route::get('photo/{id}/owner', function ($id) {
 
     // return the photo creator the usr or the post
     return $photo->imageable;
+});
+
+//polymorphic return all tags for a post
+
+Route::get('poly/post/tags',function(){
+    $post = Post::find(1);
+
+    foreach ($post->tags as $tag){
+        echo $tag->name.'<br>';
+    }
+});
+
+//polymorphic inverse
+
+Route::get('polyinv/tag/post',function(){
+   $tag = Tag::find(1);
+
+   foreach ($tag->posts as $post){
+       echo $post->title.'<br>';
+   }
 });

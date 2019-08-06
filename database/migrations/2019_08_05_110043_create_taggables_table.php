@@ -16,7 +16,7 @@ class CreateTaggablesTable extends Migration
         Schema::create('taggables', function (Blueprint $table) {
             $table->integer('tag_id'); // forign key of tags
             $table->integer('taggable_id'); // forign key of vodeo
-            $table->integer('taggable_type'); // type vodoe or tag ?
+            $table->string('taggable_type'); // type vodoe or tag ?
         });
     }
 

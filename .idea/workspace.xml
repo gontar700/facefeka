@@ -8,7 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ef555536-0212-4992-affc-3886be0bf658" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Post.php" afterPath="$PROJECT_DIR$/app/Post.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2019_08_05_110043_create_taggables_table.php" afterPath="$PROJECT_DIR$/database/migrations/2019_08_05_110043_create_taggables_table.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,31 +20,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Photo.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Photo.php">
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="29" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="29" />
-              <folding />
+            <state relative-caret-position="190">
+              <caret line="288" column="32" lean-forward="false" selection-start-line="288" selection-start-column="32" selection-end-line="288" selection-end-column="32" />
+              <folding>
+                <element signature="e#7#389#0#PHP" expanded="true" />
+                <element signature="e#391#404#0#PHP" expanded="true" />
+                <element signature="e#623#744#0#PHP" expanded="false" />
+                <element signature="e#1057#1271#0#PHP" expanded="false" />
+                <element signature="e#1274#1416#0#PHP" expanded="false" />
+                <element signature="e#1419#1558#0#PHP" expanded="false" />
+                <element signature="e#1561#1659#0#PHP" expanded="false" />
+                <element signature="e#1671#1885#0#PHP" expanded="false" />
+                <element signature="e#1888#2129#0#PHP" expanded="false" />
+                <element signature="e#2200#2366#1#PHP" expanded="false" />
+                <element signature="e#2397#2495#1#PHP" expanded="false" />
+                <element signature="e#2560#2616#1#PHP" expanded="false" />
+                <element signature="e#2647#2711#1#PHP" expanded="false" />
+                <element signature="e#2766#2805#1#PHP" expanded="false" />
+                <element signature="e#2837#2876#1#PHP" expanded="false" />
+                <element signature="e#2911#2955#1#PHP" expanded="false" />
+                <element signature="e#2994#3084#1#PHP" expanded="false" />
+                <element signature="e#3124#3198#1#PHP" expanded="false" />
+                <element signature="e#3230#3282#1#PHP" expanded="false" />
+                <element signature="e#3498#3595#0#PHP" expanded="false" />
+                <element signature="e#3533#3594#1#PHP" expanded="false" />
+                <element signature="e#3660#3754#0#PHP" expanded="false" />
+                <element signature="e#3694#3753#1#PHP" expanded="false" />
+                <element signature="e#3783#3906#1#PHP" expanded="false" />
+                <element signature="e#3979#4106#1#PHP" expanded="false" />
+                <element signature="e#4187#4314#1#PHP" expanded="false" />
+                <element signature="e#4360#4477#1#PHP" expanded="false" />
+                <element signature="e#4565#4705#1#PHP" expanded="false" />
+                <element signature="e#4809#4941#1#PHP" expanded="false" />
+                <element signature="e#5028#5160#1#PHP" expanded="false" />
+                <element signature="e#5246#5385#1#PHP" expanded="false" />
+                <marker date="1565089242000" expanded="true" signature="680:726" ph="insert into posts... " />
+                <marker date="1565089242000" expanded="true" signature="1123:1155" ph="select * fro... posts" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Post.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Post.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tag.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Tag.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Tag.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+            <state relative-caret-position="159">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -66,6 +90,8 @@
       <find>insert</find>
       <find>destroy</find>
       <find>auto</find>
+      <find>post/tags</find>
+      <find>post/</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -101,12 +127,12 @@
         <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_07_26_153325_create_photos_table.php" />
         <option value="$PROJECT_DIR$/app/Photo.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_08_05_105602_create_videos_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_08_05_105804_create_tags_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_08_05_110043_create_taggables_table.php" />
         <option value="$PROJECT_DIR$/app/Post.php" />
         <option value="$PROJECT_DIR$/app/Tag.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_08_05_110043_create_taggables_table.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
       </list>
     </option>
   </component>
@@ -246,7 +272,7 @@
       <workItem from="1563558373996" duration="2508000" />
       <workItem from="1563629488114" duration="17204000" />
       <workItem from="1564162528334" duration="7814000" />
-      <workItem from="1565001484398" duration="2494000" />
+      <workItem from="1565001484398" duration="6836000" />
     </task>
     <task id="LOCAL-00001" summary="view template">
       <created>1561374920007</created>
@@ -259,7 +285,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76457000" />
+    <option name="totallyTimeSpent" value="80799000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="721" extended-state="0" />
@@ -269,13 +295,13 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46042004" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4824281" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4824281" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -292,10 +318,10 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4824281" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4824281" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46042004" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -646,63 +672,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_05_110043_create_taggables_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="18" column="68" lean-forward="false" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_05_105602_create_videos_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="17" column="35" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="35" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="263" column="50" lean-forward="false" selection-start-line="263" selection-start-column="50" selection-end-line="263" selection-end-column="50" />
-          <folding>
-            <element signature="e#7#389#0#PHP" expanded="true" />
-            <element signature="e#391#404#0#PHP" expanded="true" />
-            <element signature="e#651#772#0#PHP" expanded="false" />
-            <element signature="e#1085#1299#0#PHP" expanded="false" />
-            <element signature="e#1302#1444#0#PHP" expanded="false" />
-            <element signature="e#1447#1586#0#PHP" expanded="false" />
-            <element signature="e#1589#1687#0#PHP" expanded="false" />
-            <element signature="e#1699#1913#0#PHP" expanded="false" />
-            <element signature="e#1916#2157#0#PHP" expanded="false" />
-            <element signature="e#2228#2394#1#PHP" expanded="false" />
-            <element signature="e#2425#2523#1#PHP" expanded="false" />
-            <element signature="e#2588#2644#1#PHP" expanded="false" />
-            <element signature="e#2675#2739#1#PHP" expanded="false" />
-            <element signature="e#2794#2833#1#PHP" expanded="false" />
-            <element signature="e#2865#2904#1#PHP" expanded="false" />
-            <element signature="e#2939#2983#1#PHP" expanded="false" />
-            <element signature="e#3022#3112#1#PHP" expanded="false" />
-            <element signature="e#3152#3226#1#PHP" expanded="false" />
-            <element signature="e#3258#3310#1#PHP" expanded="false" />
-            <element signature="e#3561#3622#1#PHP" expanded="false" />
-            <element signature="e#3722#3781#1#PHP" expanded="false" />
-            <element signature="e#3785#3935#0#PHP" expanded="false" />
-            <element signature="e#3811#3934#1#PHP" expanded="false" />
-            <element signature="e#3972#4135#0#PHP" expanded="false" />
-            <element signature="e#4007#4134#1#PHP" expanded="false" />
-            <element signature="e#4180#4343#0#PHP" expanded="false" />
-            <element signature="e#4215#4342#1#PHP" expanded="false" />
-            <element signature="e#4358#4506#0#PHP" expanded="false" />
-            <element signature="e#4388#4505#1#PHP" expanded="false" />
-            <element signature="e#4555#4734#0#PHP" expanded="false" />
-            <element signature="e#4593#4733#1#PHP" expanded="false" />
-            <element signature="e#4837#4969#1#PHP" expanded="false" />
-            <element signature="e#5056#5188#1#PHP" expanded="false" />
-            <marker date="1565001840000" expanded="true" signature="708:754" ph="insert into posts... " />
-            <marker date="1565001840000" expanded="true" signature="1151:1183" ph="select * fro... posts" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -714,11 +688,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_05_110043_create_taggables_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Tag.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        <state relative-caret-position="159">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="288" column="32" lean-forward="false" selection-start-line="288" selection-start-column="32" selection-end-line="288" selection-end-column="32" />
+          <folding>
+            <element signature="e#7#389#0#PHP" expanded="true" />
+            <element signature="e#391#404#0#PHP" expanded="true" />
+            <element signature="e#623#744#0#PHP" expanded="false" />
+            <element signature="e#1057#1271#0#PHP" expanded="false" />
+            <element signature="e#1274#1416#0#PHP" expanded="false" />
+            <element signature="e#1419#1558#0#PHP" expanded="false" />
+            <element signature="e#1561#1659#0#PHP" expanded="false" />
+            <element signature="e#1671#1885#0#PHP" expanded="false" />
+            <element signature="e#1888#2129#0#PHP" expanded="false" />
+            <element signature="e#2200#2366#1#PHP" expanded="false" />
+            <element signature="e#2397#2495#1#PHP" expanded="false" />
+            <element signature="e#2560#2616#1#PHP" expanded="false" />
+            <element signature="e#2647#2711#1#PHP" expanded="false" />
+            <element signature="e#2766#2805#1#PHP" expanded="false" />
+            <element signature="e#2837#2876#1#PHP" expanded="false" />
+            <element signature="e#2911#2955#1#PHP" expanded="false" />
+            <element signature="e#2994#3084#1#PHP" expanded="false" />
+            <element signature="e#3124#3198#1#PHP" expanded="false" />
+            <element signature="e#3230#3282#1#PHP" expanded="false" />
+            <element signature="e#3498#3595#0#PHP" expanded="false" />
+            <element signature="e#3533#3594#1#PHP" expanded="false" />
+            <element signature="e#3660#3754#0#PHP" expanded="false" />
+            <element signature="e#3694#3753#1#PHP" expanded="false" />
+            <element signature="e#3783#3906#1#PHP" expanded="false" />
+            <element signature="e#3979#4106#1#PHP" expanded="false" />
+            <element signature="e#4187#4314#1#PHP" expanded="false" />
+            <element signature="e#4360#4477#1#PHP" expanded="false" />
+            <element signature="e#4565#4705#1#PHP" expanded="false" />
+            <element signature="e#4809#4941#1#PHP" expanded="false" />
+            <element signature="e#5028#5160#1#PHP" expanded="false" />
+            <element signature="e#5246#5385#1#PHP" expanded="false" />
+            <marker date="1565089242000" expanded="true" signature="680:726" ph="insert into posts... " />
+            <marker date="1565089242000" expanded="true" signature="1123:1155" ph="select * fro... posts" />
+          </folding>
         </state>
       </provider>
     </entry>
